@@ -11,8 +11,8 @@
 	<groupId>com.simple.rest.api</groupId>
 	<artifactId>simple.rest.api</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>rest-api</name>
-	<description>rest-api project for Spring Boot</description>
+	<name>simple.rest.api</name>
+	<description>simple.rest.api project for Spring Boot</description>
 
 	<properties>
 		<java.version>8</java.version>
