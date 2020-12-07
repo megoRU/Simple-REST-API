@@ -17,21 +17,17 @@ public class Rest {
     private String second = null;
 
     @GetMapping
-    public Json list() {
-        return new Json(first(), second(), choiceOfSides(first, second));
+    private Json list() {
+        random();
+        return new Json(first, second, choiceOfSides());
     }
 
-    private String first() {
-        return first = String.valueOf(random.nextInt(6) + 1);
+    private void random() {
+       first = String.valueOf(random.nextInt(6) + 1);
+       second = String.valueOf(random.nextInt(6) + 1);
     }
 
-    private String second() {
-        return second = String.valueOf(random.nextInt(6) + 1);
-    }
-
-    private String choiceOfSides(String diceFirstPlayer, String diceSecondPlayer) {
-        String first = diceFirstPlayer;
-        String second = diceSecondPlayer;
+    private String choiceOfSides() {
 
         //1
         if (first.equals("1")) {
@@ -94,7 +90,7 @@ public class Rest {
         if (first.equals("3")) {
 
 
-            if (first.equals("3") && second.equals("1")) {
+            if (second.equals("1")) {
                 return "https://megolox.ru/disImages/3-1.png";
             }
 
