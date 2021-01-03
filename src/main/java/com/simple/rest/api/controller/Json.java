@@ -2,21 +2,21 @@ package com.simple.rest.api.controller;
 
 public class Json {
 
-    private String firstNumber;
-    private String secondNumber;
+    private Integer firstNumber;
+    private Integer secondNumber;
     private String url;
 
-    public Json(String firstNumber, String secondNumber, String url) {
+    public Json(Integer firstNumber, Integer secondNumber, String url) {
         this.firstNumber = firstNumber;
         this.secondNumber = secondNumber;
         this.url = url;
     }
 
-    public String getFirstNumber() {
+    public Integer getFirstNumber() {
         return firstNumber;
     }
 
-    public String getSecondNumber() {
+    public Integer getSecondNumber() {
         return secondNumber;
     }
 
